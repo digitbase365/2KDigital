@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Media Queries */
+@media screen and (max-width: 998px) {
+  h1.section-title{
+    font-size: 1.33rem; 
+  }
+  header{
+    /* display: none; */
+    height: 100vh; 
+    width: 100vw;
+    display: block;
+    padding: 1.5em 0;  
+    overflow: hidden;
+  }
+  header .logo{
+    position: absolute;
+    z-index: 1;
+    left: 1rem;
+  }
+  header nav{ 
+    margin: 0;
+    height: 100%;
+    background-color: rgb(13, 39, 44); 
+    flex-direction: column;
+    justify-content: center;  
+    transition: .5s;
+    left: 100%; 
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  header nav.active{
+    left: 0;
+  }
+  header nav a{ 
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+ 
+  header .quote{
+    display: none;
+  }
+  header .menubar{
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    right: 1.5em;
+    width: 47px;
+    height: 40px;  
+    display: grid;
+    place-items: center;
+    cursor: pointer; 
+  }
+  header .menubar .hamburger{
+    width: 35px;
+    height: 3.5px;
+    background-color: #fff;
+    border-radius: 25px;
+    
+  }
+  
+  .hamburger::before, .hamburger::after{
+    position: absolute;
+    content: '';
+    height: 3.5px;
+    width: 35px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: .3s ease;
+    transition-property: top, bottom;
+  }
+  .hamburger::before{
+    top: 8px; 
+  }
+  .hamburger::after{
+    bottom: 8px; 
+  }
+
+  .hamburger.active .hamburger::before{
+    top: 0; 
+  }
+  
+ .hamburger.active .hamburger::after{
+    bottom: 0; 
+  }
+
+
+  #hero .hero.hero.container > div{
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  /* Projects */
+  #projects .projects .projects-down{
+    grid-template-columns: 1fr; 
+    grid-template-areas: 
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine"
+      "ten";
+    
+  }
+  /* End of Projects */
+
+  /* About */
+  section#about{
+    flex-direction: column;
+  }
+  /* End of About */
+}
+/* End of Media Queries */
