@@ -573,5 +573,21 @@ section#about{
 }
 /* End of About */
 
+/* Footer */
+footer .baseline{
+  height: 10vh;
+  background-color: rgb(3, 97, 97);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px solid rgb(8, 93, 133);
+}
+footer p.copyright{
+  font-size: .75rem; 
+  color: #eeefff;
+}
+
+/* End of Footer */
+
 
 
