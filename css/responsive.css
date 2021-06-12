@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+
 /* Media Queries */
 @media screen and (max-width: 998px) {
   h1.section-title{
     font-size: 1.33rem; 
+  }
+  p{
+    font-size: .5rem;
   }
   header{
     /* display: none; */
@@ -33,6 +37,7 @@
     position: absolute;
     top: 0; 
     width: 100%; 
+    z-index: -5;
   }
   header nav.active{
     left: 0;
@@ -58,13 +63,14 @@
     display: grid;
     place-items: center;
     cursor: pointer; 
+    transition: all .5s ease-in-out; 
   }
   header .menubar .hamburger{
     width: 35px;
     height: 3.5px;
     background-color: #fff;
     border-radius: 25px;
-    
+    transition: .5s;
   }
   
   .hamburger::before, .hamburger::after{
@@ -73,24 +79,31 @@
     height: 3.5px;
     width: 35px;
     background-color: #fff;
-    border-radius: 25px;
-    transition: .3s ease;
+    border-radius: 25px; 
     transition-property: top, bottom;
   }
   .hamburger::before{
-    top: 8px; 
+    transform: translateY(-10px);
   }
   .hamburger::after{
-    bottom: 8px; 
+    transform: translateY(10px); 
   }
 
-  .hamburger.active .hamburger::before{
-    top: 0; 
+  /* Hamburger Animation */
+  .menubar.active .hamburger{
+    transform: translateX(-50px);
+    background: transparent; 
   }
-  
- .hamburger.active .hamburger::after{
-    bottom: 0; 
+  .menubar.active .hamburger::before{
+    transform: translateX(0);
+    transform: rotate(45deg) translate(35px, -35px);
   }
+  .menubar.active .hamburger::after{
+    transform: translateX(0);
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+  /* End of Hamburger Animation */
+
 
 
   #hero .hero.hero.container > div{

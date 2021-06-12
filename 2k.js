@@ -16,10 +16,19 @@ navlinks.forEach(link =>{
 let menu = document.querySelector('.menubar')
 let nav = document.querySelector('nav')
 let hamburger = document.querySelector('.hamburger')
+let menulinks = document.querySelectorAll('header nav a')
 
 menu.addEventListener('click', ()=>{
   nav.classList.toggle('active')
   hamburger.classList.toggle('active')
+  menu.classList.toggle('active')
+})
+
+menulinks.forEach((link)=>{
+  link.addEventListener('click', ()=>{
+    nav.classList.toggle('active')
+    hamburger.classList.toggle('active')
+  })
 })
 
 // Scroll Header
