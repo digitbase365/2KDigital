@@ -24,9 +24,10 @@ menu.addEventListener('click', ()=>{
   menu.classList.toggle('active')
 })
 
-menulinks.forEach((link)=>{
-  link.addEventListener('click', ()=>{
-    nav.classList.toggle('active')
+menulinks.forEach((item)=>{
+  item.addEventListener('click', ()=>{
+    menu.classList.toggle('active') 
+    nav.classList.toggle('active') 
     hamburger.classList.toggle('active')
   })
 })

@@ -9,8 +9,8 @@
     display: flex; 
     z-index: 2;
     align-items: center;
-    position: absolute;
-    /* position: fixed; */
+    /* position: absolute; */
+    position: fixed;
     transition: .9s ease background-color;
   }
   header .logo{
