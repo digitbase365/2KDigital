@@ -4,8 +4,71 @@
   box-sizing: border-box;
 }
 
-
 /* Media Queries */
+@media screen and (max-width: 400px){
+  body{
+    background-color: greenyellow;
+  }
+  #hero .hero h1{
+    font-size: 1.33rem;
+  }
+  section p{
+    font-size: .95rem;
+    font-weight: 300;
+  }
+  #hero .cta{ 
+    font-size: .8rem;
+    padding: 3px 10px 5px;  
+    float: right;
+  }
+  .top{
+    width: 80%;   
+  }
+  #solution .card{
+    margin: -50px auto; 
+  }
+    /* Products Rack */
+    #products .products-down{  
+      width: 100%;
+      padding: 1.5em 1em; 
+      grid-gap: .75em;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    } 
+    #products .products-down .product-item{ 
+      min-height: 100px; 
+      margin: 0 auto;
+      border-radius: 8px;
+      padding: 15px 5px; 
+    }
+    #products .products-down .product-title{ 
+      margin: 0px 0px 8px; 
+  
+    }
+    #products .products-down .product-item .product-info{ 
+      font-size: .65rem;
+    }
+    #products .products-down .product-btns{ 
+      justify-content: space-around;
+    }
+    .btn-oval{ 
+      padding: 1px 15px 5px; 
+    }
+    .btn-oval span{
+      font-size: 12px;  
+    }
+    .btn-round{ 
+      font-size: 12px; 
+      height: 32px;
+      width: 32px; 
+      display: grid;
+      place-items: center;
+    }
+    .btn-round i{ 
+      font-size: 12.5px; 
+    }
+    /* End of Products Rack */
+}
+
 @media screen and (max-width: 998px) {
   h1.section-title{
     font-size: 1.33rem; 
@@ -71,7 +134,7 @@
     height: 3.5px;
     background-color: #fff;
     border-radius: 25px;
-    transition: .5s;
+    transition: .5s ease-in-out;
   }
   
   .hamburger::before, .hamburger::after{
@@ -81,7 +144,7 @@
     width: 35px;
     background-color: #fff;
     border-radius: 25px; 
-    transition-property: top, bottom;
+    transition: all .5s ease-in-out;
   }
   .hamburger::before{
     transform: translateY(-10px);
@@ -95,12 +158,10 @@
     transform: translateX(-50px);
     background: transparent; 
   }
-  .menubar.active .hamburger::before{
-    transform: translateX(0);
+  .menubar.active .hamburger::before{ 
     transform: rotate(45deg) translate(35px, -35px);
   }
-  .menubar.active .hamburger::after{
-    transform: translateX(0);
+  .menubar.active .hamburger::after{ 
     transform: rotate(-45deg) translate(35px, 35px);
   }
   /* End of Hamburger Animation */
@@ -129,6 +190,8 @@
     
   }
   /* End of Projects */
+
+
 
   /* About */
   section#about{
