@@ -5,7 +5,7 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 490px){
   body{
     background-color: greenyellow;
   }
