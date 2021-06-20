@@ -5,10 +5,7 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 490px){
-  body{
-    background-color: greenyellow;
-  }
+@media screen and (max-width: 490px){  
   #hero .hero h1{
     font-size: 1.33rem;
   }
@@ -67,6 +64,18 @@
       font-size: 12.5px; 
     }
     /* End of Products Rack */
+    /* Footer */
+    footer .midline h3{  
+      font-size: .8rem;
+    }
+    footer .midline a{
+      font-size: .75rem;
+    }
+    footer p.copyright{
+      font-size: .6rem; 
+      color: #fff;
+    }
+    /* End of Footer */
 }
 
 @media screen and (max-width: 998px) {

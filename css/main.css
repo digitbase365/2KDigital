@@ -1,4 +1,14 @@
+:root{
+  --pri-color: #eeeeff; 
+  --sec-color: #83daa5;
+  --spn-color: #C25BC2;
+  --acn-color: #B084CC;
+  --trx-color: #00000050;
+  --pri-txt: #224;
+  --sec-txt: #355;
+  --spn-text: #FF2E00;
 
+}
 
 /* Header Rulesets */
   header{
@@ -572,21 +582,20 @@ section#about{
 }
 /* End of About */
 
-/* Footer */
-footer .baseline{
-  height: 10vh;
-  background-color: rgb(3, 97, 97);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 5px solid rgb(8, 93, 133);
-}
-footer p.copyright{
-  font-size: .75rem; 
-  color: #eeefff;
-}
 
-/* End of Footer */
 
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* End of Media Queries */
 
 
