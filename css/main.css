@@ -124,7 +124,7 @@
     transition: .7s ease-in-out;
     transition-property: background-color, color; 
   }
-  #hero .cta:hover{
+  #hero .cta:hover, #hero .cta:active{
     background-color: var(--spn-color); 
     color: #eeefff;
   }
@@ -171,7 +171,8 @@
   z-index: 1;
   transform: translateY(100px);
 }
-#solution .card-holder .card:hover .face.face1{
+#solution .card-holder .card:hover .face.face1,
+#solution .card-holder .card:active .face.face1{
   transform: translateY(0); 
   background: #B084CC;
   background: var(--acn-color);
@@ -198,7 +199,8 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-100px);
 }
-#solution .card-holder .card:hover .face.face2{
+#solution .card-holder .card:hover .face.face2,
+#solution .card-holder .card:active .face.face2{
   transform:  translateY(0);
 }
 #solution .card-holder .card .face.face2 .content a{
@@ -210,7 +212,8 @@
   border: 1px solid #333;
   transition: .8s ease-in-out;
 }
-#solution .card-holder .card .face.face2 .content a:hover{
+#solution .card-holder .card .face.face2 .content a:hover,
+#solution .card-holder .card .face.face2 .content a:active{
   background: #333;
   color: #eeefff;
 }
@@ -366,7 +369,8 @@ section#projects{
               4px 4px 10px -1px rgba(0, 0, 0, 0.1),
               6px 6px 8px -1px rgba(0, 0, 0, 0.05); 
 }
-#products .products-down .product-item:hover{
+#products .products-down .product-item:hover,
+#products .products-down .product-item:active{
   box-shadow: inset -4px -4px 5px -1px rgba(255, 255, 255, 0.7),
               inset 4px 4px 5px -1px rgba(0, 0, 0, 0.2);
 }
@@ -443,7 +447,8 @@ section#projects{
   color: rgb(3, 97, 97);
   transition: color .5s ease-in-out;
 }
-.btn-round:hover i{
+.btn-round:hover i,
+.btn-round:active i{
   color: orangered;
 }
 /* End of Products Ruleset */
@@ -535,7 +540,8 @@ section#about{
   transition: bottom .5s;
   transition-delay: .8s;
 }
-#about .team-holder .card:hover .contentBx{
+#about .team-holder .card:hover .contentBx,
+#about .team-holder .card:active .contentBx{
   bottom: 0;
   transition-delay: 0s;
 }
@@ -550,7 +556,8 @@ section#about{
   transform: translateY(-20px);
   transition-delay: .6s;
 }
-#about .team-holder .card:hover .contentBx .content h3{
+#about .team-holder .card:hover .contentBx .content h3,
+#about .team-holder .card:active .contentBx .content h3{
   opacity: 1;
   transform: translateY(0px);
 }
@@ -568,11 +575,12 @@ section#about{
   list-style: none;
   margin: 0 10px;
   transform: translateY(40px);
-  transition: .5s;
+  transition: .5s;cd
   opacity: 0;
   transition-delay: calc(0.2s * var(--i));
 }
-#about .team-holder .card:hover .contentBx .sci li{
+#about .team-holder .card:hover .contentBx .sci li,
+#about .team-holder .card:active .contentBx .sci li{
   transform: translateY(0px);
   opacity: 1;
 }
