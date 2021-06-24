@@ -218,51 +218,7 @@
   color: #eeefff;
 }
 
-#solution .solution-down .rating{
-  min-height: 20vh;
-  margin-bottom: 50px;
-  /* background-color: var(--pri-color); */
-}
-#solution .solution-down .rating .strip{
-  max-width: 1000px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  gap: 1rem;
-}
-#solution .solution-down .rating .box{
-  width: 250px;
-  height: 150px; 
-  display: grid;
-  place-items: center;
-  color: var(--pri-txt);
-  position: relative;
-  border-radius: 10px;
-  box-shadow: inset 4px 4px 5px -1px rgb(0, 0, 0, 0.2), 
-    inset -4px -4px 5px -1px rgb(255, 255, 255, 0.5);
-}
-/* #solution .solution-down .rating .box::after{
-  position: absolute;
-  content: '';
-  width: 80%;
-  height: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: transparent;
-  border-radius: 10px;
-  box-shadow: inset 4px 4px 5px -1px rgba(0, 0, 0, 0.25),
-              inset -4px -4px 5px -1px rgba(255, 255, 255, 0.9);
-} */
-#solution .solution-down .rating .box h1{
-  font-size: 3.3rem;
-}
-#solution .solution-down .rating .box h4{
-  font-size: 1.5rem;
-}
+
 /* End of Solution Ruleset */
 
 /* Projects Ruleset */
@@ -471,6 +427,54 @@ section#projects{
   opacity: .7;
 
 }
+
+#testimonials .rating{
+  min-height: 20vh;
+  margin-bottom: 50px;
+  /* background-color: var(--pri-color); */
+}
+#testimonials .rating .strip{
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+#testimonials .rating .box{
+  width: 250px;
+  height: 150px; 
+  display: grid;
+  place-items: center;
+  color: var(--pri-txt);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 5px -1px rgb(0, 0, 0, 0.2), 
+    inset -4px -4px 5px -1px rgb(255, 255, 255, 0.5);
+}
+/* #solution .solution-down .rating .box::after{
+  position: absolute;
+  content: '';
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 5px -1px rgba(0, 0, 0, 0.25),
+              inset -4px -4px 5px -1px rgba(255, 255, 255, 0.9);
+} */
+#testimonials .rating .box h1{
+  font-size: 2.75rem;
+  color: #fff;
+}
+#testimonials .rating .box h4{
+  font-size: 1.33rem;
+    color: #fff;
+}
 /* End of Testimonials Ruleset */
 
 /* About */
@@ -575,7 +579,7 @@ section#about{
   list-style: none;
   margin: 0 10px;
   transform: translateY(40px);
-  transition: .5s;cd
+  transition: .5s;
   opacity: 0;
   transition-delay: calc(0.2s * var(--i));
 }
