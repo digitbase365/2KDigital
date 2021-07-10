@@ -53,7 +53,7 @@ footer .midline a{
 }
 footer .baseline{
   padding: .75em 0;
-  background-color: rgb(3, 97, 97);
+  background-color: #036161;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +61,7 @@ footer .baseline{
 }
 footer p.copyright{
   font-size: .75rem; 
-  color: #fff;
+  color: rgb(57, 197, 255);
 }
 
 /* End of Footer */
