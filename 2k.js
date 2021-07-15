@@ -1,3 +1,21 @@
+// Navlinks Hover Effect
+var marker = document.querySelector('.marker');
+var item = document.querySelectorAll('nav a');
+
+
+function indicator(e){
+ marker.style.left = e.offsetLeft+"px";
+ marker.style.width = e.offsetWidth+"px";
+} 
+
+item.forEach(link => {
+ link.addEventListener('mouseover', (e)=>{
+   indicator(e.target);
+ })
+})
+// End of Navlinks Hover Effect
+
+
 // Sliding Hero
 const myslide = document.querySelectorAll('.myslide'),
 	  dot = document.querySelectorAll('.dot');

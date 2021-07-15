@@ -6,47 +6,46 @@
   --trx-color: #00000050;
   --pri-txt: #224;
   --sec-txt: #355;
-  --spn-text: #FF2E00;
-
+  --spn-text: #FF2E00;  
+  --hf-color: #FFBCB5;  
 }
 header{
-  height: 60px;
+  height: 7vh;
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: 2;
-  background-color: var(--sec-txt);
+  z-index: 1;  
+  background-color: rgba(0, 0, 0, .55);
+  display: flex;
+  align-items: center;
 }
-#logo{
-  line-height: 60px;
+#logo{ 
   margin-left: 40px;
   display: inline-block;
-cursor: pointer;
-font-size: 30px;
-font-weight: bold;
-color: #00a7ff; /* blue */
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--hf-color);  
 }
 #logo:hover{
-  color: #eef9ff; /* white */
+  color: #eef9ff; 
 }
 #logo-s{
-color: #eef9ff; /* white */
+color: #eef9ff; 
 margin-left: 5px;
 }
 #logo:hover #logo-s{
-color: #00a7ff; /* blue */
+color: var(--hf-color);
 }
-.sign{
-float: right;
-line-height: 60px;
-margin-right: 40px;
+.sign{   
+  margin-right: 40px;
 }
 .sign a{
 color: #fff;
 font-weight: bold;
 text-decoration: none;
 }
-.act{
+.sign .up{
 border: 2px solid #fff;
 border-radius: 50px;
 padding: 6px 15px;
@@ -54,20 +53,66 @@ padding: 6px 15px;
 .sign a:hover{
 color: #00a7ff; /* blue */
 border-color: #00a7ff; /* blue */
+} 
+nav{
+  position: relative;
+  flex: 1; 
+  display: flex;
+  justify-content: flex-end; 
+  padding: 0 50px;
 }
-/* /1 */
+nav a{
+  position: relative;
+  margin: 0 20px;
+  padding: 0 5px;
+  font-size: 1.1rem;
+  color: #fff; 
+}
+nav .marker{
+  position: absolute;
+  height: 4px;
+  width: 0;
+  left: 0;
+  background: var(--hf-color);
+  bottom: -7px;
+  border-radius: 4px;  
+  transition: .5s;
+}
 
-/* 2 */
-.slider{
+/* Hero Showcase Rulesets */
+.hero{
 position: relative;
 width: 100%;
-background: #2c3e50; /* darckblue */
-}
+background: #2c3e50; /* darckblue */ 
+} 
 .myslide{
 height: 655px;
 display: none;
-overflow: hidden;
+overflow: hidden; 
+z-index: 1;
 }
+.myslide .txt{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 250px;
+  width: 400px;
+  padding: 20px;
+  letter-spacing: 2px; 
+  top: 35%;
+  left: 12%;
+  -webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+    animation-name: posi;
+    animation-duration: 2s;
+  z-index: 2; 
+  }
+  .myslide .txt h1{
+  color: #fff; 
+  }
+  .myslide .txt p{
+  color: #fff; 
+  }
+  
 
 .prev, .next{
 position: absolute;
@@ -101,16 +146,10 @@ border: 3px solid #fff;
 border-radius: 50%;
 margin: 0 10px;
 cursor: pointer;
-}
-/* /2 */
-
-/* javascript */
+} 
 .actif, .dot:hover{
 border-color: #00a7ff; /* blue */
-}
-/* /javascript */
-
-/* muslide add fade */
+} 
 .fade {
 -webkit-animation-name: fade;
 -webkit-animation-duration: 1.5s;
@@ -126,33 +165,16 @@ to {opacity: 1}
 @keyframes fade {
 from {opacity: 0.8}
 to {opacity: 1}
-}
-/* /muslide add fade */
+} 
 
-/* 3 */
-.txt{
-position: absolute;
-color: #fff;
-letter-spacing: 2px;
-line-height: 35px;
-top: 40%;
-left: 15%;
--webkit-animation-name: posi;
-  -webkit-animation-duration: 2s;
-  animation-name: posi;
-  animation-duration: 2s;
-z-index: 1;
-}
 
 @-webkit-keyframes posi {
 from {left: 25%;}
-to {left: 15%;}
-}
-
-
+to {left: 12%;}
+} 
 @keyframes posi {
 from {left: 25%;}
-to {left: 15%;}
+to {left: 12%;}
 }
 
 .txt h1{
@@ -167,7 +189,7 @@ font-size: 20px;
 /* /3 */
 
 /* 4 */
-.slider img{
+.hero img{
 transform: scale(1.5, 1.5);
 -webkit-animation-name: zoomin;
   -webkit-animation-duration: 40s;
@@ -177,70 +199,11 @@ transform: scale(1.5, 1.5);
 @-webkit-keyframes zoomin {
 from {transform: scale(1, 1);}
 to {transform: scale(1.5, 1.5);}
-}
-
-
+} 
 @keyframes zoomin {
 from {transform: scale(1, 1);}
 to {transform: scale(1.5, 1.5);}
-}
-/* /4 */
-
-
-
-/* 5 */
-@media screen and (max-width: 800px){
-.myslide{
-  height: 500px;
-}
-.txt{
-  letter-spacing: 2px;
-  line-height: 25px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-animation-name: posi2;
-  -webkit-animation-duration: 2s;
-  animation-name: posi2;
-  animation-duration: 2s;
-}
-
-@-webkit-keyframes posi2 {
-  from {top: 35%;}
-  to {top: 50%;}
-}
-
-
-@keyframes posi2 {
-  from {top: 35%;}
-  to {top: 50%;}
-}
-
-.txt h1{
-  font-size: 40px;
-}
-.txt p{
-  font-size: 13px;
-}
-
-}
-/* /5 */
-
-/* 6 */
-@media screen and (max-width: 520px){
-.txt h1{
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-.sign{
-  margin-right: 20px;
-}
-.sign a{
-  font-size: 12px;
-}
-}
-/* /6 */
-
+}  
 
 /* Service Ruleset */
 #solution{
@@ -639,7 +602,7 @@ section#projects{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 1rem;
+  gap: 1em;
 }
 #testimonials .rating .box{
   width: 200px;
