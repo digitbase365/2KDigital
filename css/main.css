@@ -74,7 +74,7 @@ nav .marker{
   width: 0;
   left: 0;
   background: var(--hf-color);
-  bottom: -7px;
+  bottom: -13px;
   border-radius: 4px;  
   transition: .5s;
 }
@@ -506,22 +506,24 @@ section#projects{
 
 }
 #testimonials .testimonials{
-  flex-direction: column;
+  display: flex;
+  flex-direction: column;  
+  align-items: center; 
   justify-content: space-around;
-  /* max-width: 80%; */
 }  
 /* Infused Testimonial Slider Rulesets */
 .testimonial-slider{
   position: relative;
   width: 800px;
   height: 300px;
-  margin: 70px 10px 10px; 
+  margin: 70px 10px 50px;  
 }
 .testimonial-slider .slide{
   position: absolute;
-  /* display: flex; */
+  display: flex;
   z-index: 1;
   width: 100%;
+  height: 100%;
   clip-path: circle(0% at 0 50%); 
 }
 .testimonial-slider .slide.activ{
@@ -536,19 +538,19 @@ section#projects{
   border-radius: 50%;
   overflow: hidden;
   position: absolute; 
-  right: 12%; 
+  right: 10%; 
 }
 .testimonial-slider .slide img{
-  width: 100%;
-  border-radius: 5px;
+  width: 100%; 
   z-index: 1;
   object-fit: contain;
 }
 .testimonial-slider .slide .info{
   position: absolute;
+  width: 60%;
   top: 40px; 
   font-weight: 300;
-  padding: 15px 30px; 
+  padding: 15px 0px;  
 }
 .testimonial-slider .slide .info h4{
   color: #fff;
@@ -561,7 +563,7 @@ section#projects{
   color: #fff;
   background: rgba(0, 0, 0, .55);
   font-size: 16px;
-  width: 60%;
+  width: 100%;
   padding: 20px;
   border-radius: 4px;
   border-top-right-radius: 75px;
@@ -670,12 +672,9 @@ section#about{
   flex-basis: 60%; 
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* border: 1px solid salmon;   */
-  /* background: #e0f7fa; */
+  align-items: center; 
 }
-#about .team .team-holder{
-  /* border: 1px solid dodgerblue;  */
+#about .team .team-holder{ 
   position: relative;
   display: flex;
   justify-content: space-between;

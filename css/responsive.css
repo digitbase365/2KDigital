@@ -177,7 +177,8 @@
  /* Testimonial Responsive Rulesets */ 
   .testimonial-slider{
       width: 600px;
-      height: 375px;
+      height: 375px; 
+      
   }
   .testimonial-slider .slide .info{
       padding: 10px 25px;
@@ -339,8 +340,11 @@
   .top{
     width: 80%;   
   }
+  #solution{
+    margin: 50px 0 40px;
+  }
   #solution .card{
-    margin: -50px auto; 
+    margin: -42px auto; 
   }
   #solution .card-holder .card .face{
     max-width: 250px;  
@@ -402,10 +406,10 @@
     }
     /* End of Footer */
 
-  /* Testimonials */
-  #testimonials .testimonials.container{ 
-    height: 400px;
-    /* max-width: 80%; */
+  /* Testimonials */ 
+  #testimonials .testimonials{  
+    justify-content: center; 
+    max-height: 60vh;
   }  
   .testimonial-slider{
       width: 100%;
@@ -418,28 +422,29 @@
     top: 30px;
     border: 3px solid#fff;
 } 
-  .testimonial-slider .slide .info{
-      width: 260px;
-      padding: 5px 0px 0px 10px; 
-      top: 0px; 
+  .testimonial-slider .slide .info{  
+      width: 85%;
+      padding: 5px 20px; 
+      top: 10%; 
 }
   .testimonial-slider .slide .info h4{
       font-size: 20px;
   }
   .testimonial-slider .slide .info p{ 
-      height: 145px;
+      height: 120px;
       font-size: 12px;
       width: 92%;
       padding: 10px 20px;
       line-height: unset;
+      margin-bottom: 50px;
   } 
-  .testimonial-slider .navigation{
-      bottom: 0px;
+  .testimonial-slider .navigation{ 
+    bottom: -40px; 
   }
   .testimonial-slider .navigation .but{
       width: 8px;
       height: 8px;
-      margin: 6px;
+      margin: 6px; 
   }
   #testimonials .rating .strip{
     padding: 50px 0;
@@ -460,6 +465,34 @@
       font-weight: 500;
       letter-spacing: .2px;
   }
+
+  /* About Team */
+  #about .team .team-holder{ 
+    justify-content: center; 
+  }
+  #about .team .team-holder .card{ 
+    width: 220px;
+    height: 260px;  
+  }
+  #about .team-holder .card .contentBx{
+    position: absolute;
+    bottom: -90px; 
+    height: 90px; 
+  }
+  #about .team-holder .card .contentBx .content h3{ 
+    font-size: 14px; 
+  }
+  #about .team-holder .card .contentBx .content span{
+    font-size: 12px; 
+  }
+  #about .team-holder .card .contentBx .sci li{ 
+    margin: 0 5px; 
+  }
+  #about .team-holder .card .contentBx .sci li a{ 
+    font-size: 15px;
+  }
 }
 /* End of Testimonial Responsive Rulesets */
+
+
 /* End of Media Queries */
