@@ -1,6 +1,73 @@
-#contact{
-    border: 2px solid dodgerblue;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#contact{ 
+    background: #e8e8e8;   
+    padding: 50px 0; 
 }
 #contact .contact.container{
-    min-height: 60vh; 
+    min-height: 65vh; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3em;
 }
+.map iframe{
+    width: 100%; 
+}
+#contact .map{ 
+    flex-basis: 60%;
+    height: 100%;
+}
+#contact .contact-form{ 
+    flex-basis: 30%; 
+    text-align: center;
+    background: #fff; 
+    border-radius: 10px;
+    padding: 2em;
+} 
+.contact-form h1{
+    font-weight: 500;
+}
+.contact-form p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.contact-form-txt{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #000;
+    border: 1px solid #D5D0CD;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;border-radius: 50px;
+}
+.contact-form-txtarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    overflow-y: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #000;
+    border: 1px solid #D5D0CD;
+    border-radius: 7px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contact-form-btn{
+    width: 100%;
+    border-radius: 50px;
+    background-color: #0D0628;
+    color: #fff;
+    border: none; 
+    padding: .3em;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.contact-form-txt::placeholder, .contact-form-txtarea::placeholder{
+    color: #aaa;
+} 

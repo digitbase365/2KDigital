@@ -49,7 +49,8 @@ p{
   justify-content: center; 
 }
 .section-title{
-  font-size: 2.25rem; 
+  font-size: 1.88rem; 
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--pri-txt);
   margin: 2em  0 .5em;

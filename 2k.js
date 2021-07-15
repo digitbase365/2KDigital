@@ -1,65 +1,42 @@
-var marker = document.querySelector('.marker')
-var navlinks = document.querySelectorAll('nav a')
+// Sliding Hero
+const myslide = document.querySelectorAll('.myslide'),
+	  dot = document.querySelectorAll('.dot');
+let counter = 1;
+slidefun(counter);
 
-function indicator(e){
-  marker.style.left = e.offsetLeft+"px"
-  marker.style.width = e.offsetWidth+"px"
+let timer = setInterval(autoSlide, 8000);
+function autoSlide() {
+	counter += 1;
+	slidefun(counter);
+}
+function currentSlidee(n) {
+	counter = n;
+	slidefun(counter);
+	resetTimer();
+}
+function resetTimer() {
+	clearInterval(timer);
+	timer = setInterval(autoSlide, 8000);
 }
 
-navlinks.forEach(link =>{
-  link.addEventListener('mouseover', (e)=>{
-    indicator(e.target)
-  })
-})
-
-// Responsive Header
-let menu = document.querySelector('.menubar')
-let nav = document.querySelector('nav')
-let hamburger = document.querySelector('.hamburger')
-let menulinks = document.querySelectorAll('header nav a')
-
-menu.addEventListener('click', ()=>{
-  nav.classList.toggle('active')
-  hamburger.classList.toggle('active')
-  menu.classList.toggle('active')
-})
-
-menulinks.forEach((item)=>{
-  item.addEventListener('click', ()=>{
-    menu.classList.toggle('active') 
-    nav.classList.toggle('active') 
-    hamburger.classList.toggle('active')
-  })
-})
-
-// Scroll Header
-document.addEventListener('scroll', ()=>{
-  var scroll_position = window.scrollY
-  if(scroll_position > 250){
-    // header.style.backgroundColor = "#29323c" 
-    header.style.backgroundColor = "#036161" 
-  }else{
-    header.style.backgroundColor = "#00000050"
-  }
-})
-// Scroll Header Ends
-// End of Responsive Header
-
-// Sliding Hero
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
-} 
+function slidefun(n) {
+	
+	let i;
+	for(i = 0;i<myslide.length;i++){
+		myslide[i].style.display = "none";
+	}
+	for(i = 0;i<dot.length;i++) {
+		dot[i].className = dot[i].className.replace(' actif', '');
+	}
+	if(n > myslide.length){
+	   counter = 1;
+	   }
+	if(n < 1){
+	   counter = myslide.length;
+	   }
+	myslide[counter - 1].style.display = "block";
+	dot[counter - 1].className += " actif";
+}
 // End of Sliding Hero
 
 // Testimonial JS
@@ -118,6 +95,6 @@ var repeat = function(activeClass){
     repeater()
 }
 repeat()
-// End of  Script for Autoplay Navigation
+// // End of  Script for Autoplay Navigation
 
 // End of Testimonial JS

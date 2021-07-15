@@ -212,6 +212,33 @@
 
 /* Testimonial Responsive Rulesets */
 @media screen and (max-width: 820px) {
+  /* Hero Slider */
+  .myslide{
+    height: 500px; 
+  }
+  .txt{
+    line-height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: posi2;
+    -webkit-animation-duration: 2s;
+    animation-name: posi2;
+    animation-duration: 2s;
+  }
+  @keyframes posi2{
+    from{top: 35%}
+    to{top: 50%}
+  }
+  .txt h1{
+    font-size: 40px;
+  }
+  .txt p{
+    font-size: 13px;
+  }
+
+  /*End of  Hero Slider */
+
   .testimonial-slider{
       width: 600px;
       height: 375px;
@@ -234,9 +261,43 @@
       height: 10px;
       margin: 8px;
   }
+  .scroll-top { 
+    right: 2px;   
+    display: flex;
+    align-items: center;
+  }
+  .scroll-top a, .scroll-top a:visited { 
+    height: 33px; 
+    width: 33px; 
+    line-height: 22px;  
+  } 
+  .scroll-top i{
+    font-size: 20px; 
+  }
+  .scroll-top.fb{
+    bottom: 69px;
+  } 
+  .scroll-top.chat{ 
+    bottom: 109px;
+  } 
+  .scroll-top.tw{
+    bottom: 149px;
+  } 
 }
 
 @media screen and (max-width: 620px) {
+  /* Hero Slider */
+  .txt h1{
+    font-size: 30px;
+  }
+  .sign{
+    margin-right: 20px;
+  }
+  .sign a{
+    font-size: 12px;
+  }
+  /* Hero Slider */ 
+
   .testimonial-slider{
       width: 400px;
       height: 250px;
@@ -259,6 +320,23 @@
       height: 8px;
       margin: 6px;
   }
+  #contact .map{ 
+    flex-basis: 100%; 
+}
+  #contact .contact-form{ 
+    flex-basis: 100%;  
+    margin: 0 25px;
+    padding: 1.2em;
+} 
+.contact-form p{
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.contact-form-txt{ 
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 10px;  
+} 
 }
 
 @media screen and (max-width: 420px) {
