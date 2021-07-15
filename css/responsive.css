@@ -221,7 +221,7 @@
   } 
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 720px) {
   /* Hero Slider */
   .txt h1{
     font-size: 30px;
@@ -275,7 +275,7 @@
 } 
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
   .hide-mobile{
     /* display: none; */
   }
@@ -323,14 +323,14 @@
     margin: 0 4px; 
     border: 2px solid #fff;
 } 
-    @-webkit-keyframes posi {
-      from {left: 75%;}
-      to {left: 30%;}
-      }  
-      @keyframes posi {
-      from {left: 75%;}
-      to {left: 30%;}
-      } 
+  @-webkit-keyframes posi {
+    from {left: 75%;}
+    to {left: 30%;}
+    }  
+    @keyframes posi {
+    from {left: 75%;}
+    to {left: 30%;}
+    } 
   #hero .cta{ 
     font-size: .8rem;
     padding: 3px 10px 5px;  
