@@ -195,12 +195,16 @@
     font-weight: 300;
   }
   .myslide .txt{ 
-    height: 150px;
-    width: 200px;
+    /* height: 150px; */
+    /* width: 200px; */
     padding: 20px; 
     top: 50%;
     left: 30%; 
     letter-spacing: .5px;  
+  }
+  .myslide .txt .cta{
+    font-size: 13px;
+    margin: 20px 0;
   }
   .dot{ 
     width: 10px;
@@ -215,12 +219,7 @@
     @keyframes posi {
     from {left: 75%;}
     to {left: 30%;}
-    } 
-  #hero .cta{ 
-    font-size: .8rem;
-    padding: 3px 10px 5px;  
-    float: right;
-  }
+    }  
   .top{
     width: 80%;   
   }

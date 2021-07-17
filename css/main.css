@@ -26,9 +26,13 @@ z-index: 1;
 .myslide .txt{
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 250px;
-  width: 400px;
-  padding: 20px;
+  height: 200px;
+  width: 250px;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   letter-spacing: 2px; 
   top: 35%;
   left: 12%;
@@ -44,25 +48,17 @@ z-index: 1;
   .myslide .txt p{
   color: #fff; 
   }
+  .myslide .txt .cta{
+    display: inline-block; 
+    padding: 2px 20px;
+    border: 2px solid salmon;
+  }
+  .myslide .txt .cta:hover{
+    background: salmon;
+  }
   
 
-.prev, .next{
-position: absolute;
-top: 50%;
-transform: translate(0, -50%);
-font-size: 50px;
-padding: 15px;
-cursor: pointer;
-color: #fff;
-transition: 0.1s;
-user-select: none;
-}
-.prev:hover, .next:hover{
-color: #00a7ff; /* blue */
-}
-.next{
-right: 0;
-}
+   
 .dotsbox{
 position: absolute;
 left: 50%;
