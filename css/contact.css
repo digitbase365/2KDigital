@@ -20,6 +20,7 @@
 #contact .map{ 
     flex-basis: 60%;
     height: 100%;
+    text-align: center;
 }
 #contact .contact-form{ 
     flex-basis: 30%; 
@@ -28,7 +29,7 @@
     border-radius: 10px;
     padding: 2em;
 } 
-.contact-form h1{
+.contact h1{
     font-weight: 500;
 }
 .contact-form p{

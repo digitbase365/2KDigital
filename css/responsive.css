@@ -14,99 +14,7 @@
   }
   p{
     font-size: .5rem;
-  }
-  header{
-    /* display: none; */
-    height: 100vh; 
-    width: 100vw;
-    display: block;
-    padding: 1.5em 0;  
-    overflow: hidden;
-    background-color: transparent;
-  }
-  header .logo{
-    position: fixed;
-    z-index: 1;
-    left: 1rem;
-  }
-  header nav{ 
-    margin: 0;
-    height: 100%;
-    background-color: rgb(13, 39, 44); 
-    flex-direction: column;
-    justify-content: center;  
-    transition: .5s;
-    left: 100%; 
-    position: fixed;
-    top: 0; 
-    width: 100%; 
-    /* z-index: -5; */
-  }
-  header nav.active{
-    left: 0;
-  }
-  header nav a{ 
-    width: 100%;
-    text-align: center;
-    margin: 1em;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-  }
- 
-  header .quote{
-    display: none;
-  }
-  header .menubar{
-    display: block;
-    position: fixed;
-    top: 1.2em;
-    right: 1.5em;
-    width: 47px;
-    height: 40px;  
-    display: grid;
-    place-items: center;
-    cursor: pointer; 
-    transition: all .5s ease-in-out; 
-  }
-  header .menubar .hamburger{
-    width: 35px;
-    height: 3.5px;
-    background-color: #fff;
-    border-radius: 25px;
-    transition: .5s ease-in-out;
-  }
-  
-  .hamburger::before, .hamburger::after{
-    position: absolute;
-    content: '';
-    height: 3.5px;
-    width: 35px;
-    background-color: #fff;
-    border-radius: 25px; 
-    transition: all .5s ease-in-out;
-  }
-  .hamburger::before{
-    transform: translateY(-10px);
-  }
-  .hamburger::after{
-    transform: translateY(10px); 
-  }
-
-  /* Hamburger Animation */
-  .menubar.active .hamburger{
-    transform: translateX(-50px);
-    background: transparent; 
-  }
-  .menubar.active .hamburger::before{ 
-    transform: rotate(45deg) translate(35px, -35px);
-  }
-  .menubar.active .hamburger::after{ 
-    transform: rotate(-45deg) translate(35px, 35px);
-  }
-  /* End of Hamburger Animation */
-
-
-
+  } 
   #hero .hero.hero.container > div{
     max-width: 300px;
     padding: 10px;
@@ -276,31 +184,7 @@
 } 
 }
 
-@media screen and (max-width: 520px) {
-  .hide-mobile{
-    /* display: none; */
-  }
-  header{
-    height: 7vh; 
-    background-color: rgba(0, 0, 0, .55);
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 0;
-  }
-  
-  #logo{
-    margin-left: 10px;
-    font-size: 1.2rem;
-    font-weight: 600; 
-  }
-  .sign .up{
-    border: 1px solid #fff;
-    border-radius: 50px;
-    padding: 2px 15px;
-    font-size: 0.6rem;
-    font-weight: 400;
-    }
+@media screen and (max-width: 520px) { 
   section p{
     font-size: .85rem;
   }
@@ -456,7 +340,7 @@
   }
   #testimonials .rating .box h1{
     font-size: 1.33rem; 
-    margin-bottom: 0;
+    margin-bottom: 5px;
     font-weight: 400;
   }
   #testimonials .rating .box h4{
@@ -471,8 +355,8 @@
     justify-content: center; 
   }
   #about .team .team-holder .card{ 
-    width: 220px;
-    height: 260px;  
+    width: 270px;
+    height: 320px;  
   }
   #about .team-holder .card .contentBx{
     position: absolute;

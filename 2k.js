@@ -15,6 +15,15 @@ item.forEach(link => {
 })
 // End of Navlinks Hover Effect
 
+// Mobile Menu Burger
+const hamburger = document.querySelector('.hamburger')
+const navlinks = document.querySelector('.navlinks')
+hamburger.addEventListener('click', ()=>{
+    hamburger.classList.toggle('open')
+    navlinks.classList.toggle('open')
+})
+// End of Mobile Menu Burger
+
 
 // Sliding Hero
 const myslide = document.querySelectorAll('.myslide'),
