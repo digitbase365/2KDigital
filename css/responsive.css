@@ -5,10 +5,15 @@
 }
 
 /* Media Queries */ 
- 
+@media screen and (max-width:1199px) {
+  .hide-mobile{
+    display: none;
+}
+} 
 
 
 @media screen and (max-width: 998px) {
+
   h1.section-title{
     font-size: 1.33rem; 
   }
@@ -194,9 +199,9 @@
   #hero p{
     font-weight: 300;
   }
-  .myslide .txt{ 
-    /* height: 150px; */
-    /* width: 200px; */
+  .myslide .txt{  
+    height: 200px;
+    width: 250px;
     padding: 20px; 
     top: 50%;
     left: 30%; 

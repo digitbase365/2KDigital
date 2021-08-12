@@ -1,6 +1,6 @@
 // Navlinks Hover Effect
 var marker = document.querySelector('.marker');
-var item = document.querySelectorAll('nav a');
+var item = document.querySelectorAll('nav .navlinks a');
 
 
 function indicator(e){

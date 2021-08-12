@@ -7,7 +7,8 @@
   --pri-txt: #224;
   --sec-txt: #355;
   --spn-text: #FF2E00;  
-  --hf-color: #FFBCB5;  
+  --hf-color: #FFBCB5;   
+  --attn-shade: #FFDD4A;
 }
 
 
@@ -26,16 +27,17 @@ z-index: 1;
 .myslide .txt{
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 200px;
-  width: 250px;
-  /* padding: 20px; */
+  height: 280px;
+  width: 360px;
+  padding: 30px 50px;
+  letter-spacing: .5px; 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column; 
   align-items: flex-start;
-  letter-spacing: 2px; 
-  top: 35%;
+  top: 32%;
   left: 12%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px; 
   -webkit-animation-name: posi;
     -webkit-animation-duration: 2s;
     animation-name: posi;
@@ -44,17 +46,27 @@ z-index: 1;
   }
   .myslide .txt h1{
   color: #fff; 
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2rem;
   }
   .myslide .txt p{
   color: #fff; 
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  margin-bottom: 22px;
   }
   .myslide .txt .cta{
     display: inline-block; 
-    padding: 2px 20px;
-    border: 2px solid salmon;
-  }
+    padding: 4px 20px;
+    border: 2px solid var(--attn-shade);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
   .myslide .txt .cta:hover{
-    background: salmon;
+    background: var(--attn-shade);
   }
   
 
@@ -319,10 +331,10 @@ section#projects{
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 } 
 #products .products-down .product-item{ 
-  min-height: 320px; 
+  min-height: 290px; 
   margin: 0 auto;
   border-radius: 8px;
-  padding: 25px 20px;
+  padding: 25px 10px;
   box-shadow: -4px -4px 5px -1px rgba(255, 255, 255, 0.6),
               -4px -4px 8px -1px rgba(255, 255, 255, 0.2),
               4px 4px 10px -1px rgba(0, 0, 0, 0.1),
@@ -358,19 +370,18 @@ section#projects{
 }
 .btn-oval{
   display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 8px 32px;
+  font-weight: 500; 
+  padding: 2px 8px 5px; 
   border-radius: 50px;
   box-shadow: inset -2px -2px 8px #fff,
               inset -2px -2px 12px rgba(255, 255, 255, 0.6),
               inset 2px 2px 4px rgba(0, 0, 0, 0.1),
               inset 2px 2px 8px rgba(0, 0, 0, 0.15);
-  transition: .4s;
+  transition: .4s; 
 }
 .btn-oval span{
-  color: rgb(3, 108, 212); 
+  color: rgb(3, 108, 212);  
+  font-size: 15px;  
 }
 
 .btn-oval:hover{
@@ -383,12 +394,10 @@ section#projects{
 .btn-round{
   display: inline-block;
   font-weight: 700;
-  font-size: 14px;
   text-transform: uppercase;
-  height: 45px;
-  width: 45px;
-  text-align: center;
-  line-height: 45px;
+  height: 35px;
+  width: 35px;
+  line-height: 32px;
   border-radius: 50%;
   text-decoration: none;
   box-shadow: -2px -2px 8px white,
@@ -403,8 +412,10 @@ section#projects{
               inset 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
 .btn-round i{
+  font-size: 15px;
   color: rgb(3, 97, 97);
   transition: color .5s ease-in-out;
+  text-align: center;
 }
 .btn-round:hover i,
 .btn-round:active i{
