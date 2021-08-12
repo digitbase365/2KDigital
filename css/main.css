@@ -10,7 +10,10 @@
   --hf-color: #FFBCB5;   
   --attn-shade: #FFDD4A;
 }
-
+a{
+  text-decoration: none; 
+  outline: none;
+} 
 
 /* Hero Showcase Rulesets */
 .hero{

@@ -9,6 +9,10 @@
     --spn-text: #FF2E00;
     --attn-shade: #FFDD4A;
 }
+a{
+    text-decoration: none; 
+    outline: none;
+} 
 header{ 
     position: fixed;
     top: 0;

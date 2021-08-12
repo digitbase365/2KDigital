@@ -200,7 +200,7 @@
     font-weight: 300;
   }
   .myslide .txt{  
-    height: 200px;
+    min-height: 200px;
     width: 250px;
     padding: 20px; 
     top: 50%;
