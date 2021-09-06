@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 #contact{ 
-    background: #e8e8e8;   
+    background: #e8e8e8 url(../images/backdrop/wave_img.png) no-repeat top right;   
     padding: 50px 0; 
+}
+#contact .section-title{
+    margin-top: unset;
+}
+#contact p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 #contact .contact.container{
     min-height: 65vh; 
@@ -28,14 +36,8 @@
     background: #fff; 
     border-radius: 10px;
     padding: 2em;
-} 
-.contact h1{
-    font-weight: 500;
-}
-.contact-form p{
-    font-size: 15px;
-    margin-bottom: 20px;
-}
+}  
+
 .contact-form-txt{
     width: 100%;
     height: 40px;
